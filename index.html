@@ -5,6 +5,7 @@
     <meta http-equiv="x-uA-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -12,8 +13,9 @@
     />
   </head>
   <body>
-    <main>
-      <header class="header">
+    <div class="wrapper">
+      <div class="header-border">
+      <header class="header-container">
         <a class="header-logo" href="./index.html"
           >Web<span class="logo-secondary-color">Studio</span></a
         >
@@ -22,147 +24,155 @@
           <a href="./portfolio.html">Portfolio</a>
           <a href="">Kontakt</a>
         </nav>
-        <div class="header-contacts">
+        <section class="header-contacts">
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           <a class="tel" href="tel:+48111111111">+48 111 111 111</a>
-        </div>
+        </section>
+      </div>
       </header>
-      <section class="main-page-box">
-        <h1 class="main-page-box-text">
-          EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
+      <div class="welcome-section-background">
+      <section class="welcome-section-container">
+        <h1 class="welcome-section-text">
+          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
-        <button class="zamow-button" type="button">Zamów usługe</button>
+        <button class="welcome-section-button" type="button">
+          Zamów usługe
+        </button>
+      </div>
       </section>
-      <section class="article">
-        <ul>
-          <li class="first-article">
-            <div class="article-header">LOREM IPSUM</div>
-            <p class="article-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li class="second-article">
-            <div class="article-header">LOREM IPSUM</div>
-            <p class="article-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li class="third-article">
-            <div class="article-header">LOREM IPSUM</div>
-            <p class="article-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li class="fourth-article">
-            <div class="article-header">LOREM IPSUM</div>
-            <p class="article-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="what-we-do">
-        <h2 class="main-page-header">Czym się zajmujemy</h2>
-        <ul class="what-we-do-images">
-          <li>
-            <figure class="what-we-do-pic-1">
-              <img
-                src="./images/box_1.jpg"
-                alt="Zdjęcie rąk programisty na klawiaturze w trakcie pisania kodu"
-                width="370"
-                height="294"
-              />
-            </figure>
-          </li>
+      <main class="main-page">
+        <section class="article-container">
+          <ul>
+            <li>
+              <div class="article-header">LOREM IPSUM</div>
+              <p class="article-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <div class="article-header">LOREM IPSUM</div>
+              <p class="article-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <div class="article-header">LOREM IPSUM</div>
+              <p class="article-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <div class="article-header">LOREM IPSUM</div>
+              <p class="article-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="what-we-do-container">
+          <h2 class="main-page-header">Czym się zajmujemy</h2>
+          <ul class="what-we-do-images">
+            <li>
+              <figure>
+                <img
+                  src="./images/box_1.jpg"
+                  alt="Zdjęcie rąk programisty na klawiaturze w trakcie pisania kodu"
+                  width="370"
+                  height="294"
+                />
+              </figure>
+            </li>
 
-          <li>
-            <figure class="what-we-do-pic-2">
-              <img
-                src="./images/box_2.jpg"
-                alt="Zdjęcie rąk programisty ze smartfonem w trakcie programowania smartfona"
-                width="370"
-                height="294"
-              />
-            </figure>
-          </li>
-          <li>
-            <figure class="what-we-do-pic-3">
-              <img
-                src="./images/box_3.jpg"
-                alt="Zdjęcie, na którym osoba wybiera kolor z palety na tablecie"
-                width="370"
-                height="294"
-              />
-            </figure>
-          </li>
-        </ul>
-      </section>
-      <section class="our-team">
-        <h2 class="main-page-header">Nasz zespół</h2>
-        <ul class="our-team-images">
-          <li>
-            <figure class="our-team-pic-1">
-              <img
-                src="./images/person_1_img.jpg"
-                alt="Zdjęcie uśmiechniętego mężczyzny w okularach ubranego w brązową koszulę"
-                width="270"
-                height="260"
-              />
-              <figcaption class="our-team-signature">
-                John Doe
-                <p class="our-team-position">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="our-team-pic-2">
-              <img
-                src="./images/person_2_img.jpg"
-                alt="Zdjęcie uśmiechniętej kobiety z blond włosami w czarnej marynarce"
-                width="270"
-                height="260"
-              />
-              <figcaption class="our-team-signature">
-                John Doe
-                <p class="our-team-position">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="our-team-pic-3">
-              <img
-                src="./images/person_3_img.jpg"
-                alt="Zdjęcie uśmiechniętego mężczyzny w białej koszuli"
-                width="270"
-                height="260"
-              />
-              <figcaption class="our-team-signature">
-                John Doe
-                <p class="our-team-position">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="our-team-pic-4">
-              <img
-                src="./images/person_4_img.jpg"
-                alt="Zdjęcie pewnego siebie mężczyzny w okularach noszącego czarną koszulkę"
-                width="270"
-                height="260"
-              />
-              <figcaption class="our-team-signature">
-                John Doe
-                <p class="our-team-position">UI Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
-      <footer class="footer">
+            <li>
+              <figure>
+                <img
+                  src="./images/box_2.jpg"
+                  alt="Zdjęcie rąk programisty ze smartfonem w trakcie programowania smartfona"
+                  width="370"
+                  height="294"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/box_3.jpg"
+                  alt="Zdjęcie, na którym osoba wybiera kolor z palety na tablecie"
+                  width="370"
+                  height="294"
+                />
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section class="our-team-container">
+          <h2 class="main-page-header">Nasz zespół</h2>
+          <ul class="our-team-images">
+            <li>
+              <figure>
+                <img
+                  src="./images/person_1_img.jpg"
+                  alt="Zdjęcie uśmiechniętego mężczyzny w okularach ubranego w brązową koszulę"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="our-team-signature">
+                  John Doe
+                  <p class="our-team-position">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/person_2_img.jpg"
+                  alt="Zdjęcie uśmiechniętej kobiety z blond włosami w czarnej marynarce"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="our-team-signature">
+                  John Doe
+                  <p class="our-team-position">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/person_3_img.jpg"
+                  alt="Zdjęcie uśmiechniętego mężczyzny w białej koszuli"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="our-team-signature">
+                  John Doe
+                  <p class="our-team-position">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/person_4_img.jpg"
+                  alt="Zdjęcie pewnego siebie mężczyzny w okularach noszącego czarną koszulkę"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="our-team-signature">
+                  John Doe
+                  <p class="our-team-position">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <div class="footer-background-color">
+      <footer class="footer-container">
         <a class="footer-logo" href="./index.html"
           >Web<span class="logo-third-color">Studio</span></a
         >
@@ -173,7 +183,8 @@
           >
           <a class="footer-tel" href="tel:+48111111111">+48 111 111 111</a>
         </address>
+      </div>
       </footer>
-    </main>
+    </div>
   </body>
 </html>
