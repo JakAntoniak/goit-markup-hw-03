@@ -1,3 +1,8 @@
+:root {
+  --iconcolor: #757575;
+  --black: black;
+}
+
 /* Index */
 
 * {
@@ -27,10 +32,6 @@ body {
 
 .section {
   padding: 94px 0;
-}
-
-.header-border {
-  border-bottom: 1px solid #ececec;
 }
 
 .header {
@@ -64,6 +65,18 @@ body {
 
 nav :hover {
   color: #2196f3;
+}
+
+.icon {
+  cursor: pointer;
+  fill: currentColor;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+.icon:hover {
+  fill: var(--black);
 }
 
 .header-contacts {
